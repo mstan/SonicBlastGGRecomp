@@ -27,6 +27,14 @@ redistributed here.
 > coverage across full gameplay is unverified, and more code paths will surface
 > during real play (the built-in interpreter fallback handles them when they do).
 
+## Screenshots
+
+Recompiled native build (no emulator), captured running the .gg ROM:
+
+| Title | Gameplay |
+|---|---|
+| ![Sonic Blast title screen](screenshots/title-screen.png) | ![Sonic Blast gameplay](screenshots/gameplay.png) |
+
 ## Quick start (pre-built release)
 
 1. Download `SonicBlastGGRecomp-windows-x64.zip` from
