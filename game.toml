@@ -1,0 +1,22 @@
+# game.toml — Sonic Blast (Game Gear, 1996)
+# Z80, 1 MB ROM (64 x 16KB banks), Sega mapper.
+# Verified by rom_parser: platform=GG region=GG-Export crc32=0x031B9DA9
+# Primary Game Gear bring-up target (exercises the GG VDP/palette/stereo path).
+
+[game]
+output_prefix = "sonicblast"
+platform      = "gg"
+rom           = "sonicblast.gg"   # gitignored
+crc32         = 0x031B9DA9
+
+[ram_layout]
+# game_mode     = 0x____
+# vblank_count  = 0x____
+# player_object = 0x____
+
+[mapper]
+kind = "sega"
+
+[functions]
+extra = []
+blacklist = []

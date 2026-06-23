@@ -1,0 +1,17 @@
+﻿# ROMs / dumps / saves — NEVER commit (PRINCIPLES #26)
+*.sms
+*.gg
+*.bin
+*.sav
+*.state
+# Build + generated artifacts
+build/
+*.exe
+*.log
+generated/*.c
+generated/*.h
+# vendored runtime DLLs + release artifacts (never committed)
+*.dll
+*-windows-x64.zip
+release/
+release-stage/
