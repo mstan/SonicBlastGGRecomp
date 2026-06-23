@@ -19,11 +19,13 @@ redistributed here.
 
 ## Status
 
-> **v0.0.1 — very early, mostly untested. Expect bugs.**
-> Boots through the intro (Chaos Emerald) to the **"SONIC BLAST" title screen**,
-> rendering byte-exact to the superzazu interpreter oracle on the verified path.
-> Gameplay beyond the title is largely unexercised. This is a tech-demo-grade
-> drop and uses the interpreter hybrid fallback for some per-frame routines.
+> **v0.0.2 — early pre-release. Expect bugs.**
+> Across the title and attract-demo sequence we exercised (~60s), the build runs
+> entirely as recompiled native code (no interpreter-fallback dispatch miss was
+> hit on that path) and renders byte-exact to the superzazu interpreter oracle on
+> palette (CRAM) and system RAM. The game has **not** been played end to end:
+> coverage across full gameplay is unverified, and more code paths will surface
+> during real play (the built-in interpreter fallback handles them when they do).
 
 ## Quick start (pre-built release)
 
