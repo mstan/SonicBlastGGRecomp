@@ -1,0 +1,23 @@
+rom 031b9da9
+1600 write D140 FF
+1600 pad S
+1610 pad -
+1950 pad D
+1958 pad -
+1978 pad D
+1986 pad -
+2100 pad R
+2108 pad -
+2128 pad R
+2136 pad -
+2170 capture menu
+2200 pad B
+2210 pad -
+2600 pad B
+2610 pad -
+3300 capture loaded
+3350 pad RB
+3380 pad R
+3470 capture moved
+3500 pad -
+3700 capture final
