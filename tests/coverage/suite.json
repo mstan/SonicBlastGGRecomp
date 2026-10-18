@@ -1,0 +1,156 @@
+{
+  "rom_crc32": "031B9DA9",
+  "rom_size": 1048576,
+  "cases": [
+    {
+      "name": "00-0",
+      "route": "00-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "00-1",
+      "route": "00-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "01-0",
+      "route": "01-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "01-1",
+      "route": "01-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "02-0",
+      "route": "02-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "02-1",
+      "route": "02-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "03-0",
+      "route": "03-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "03-1",
+      "route": "03-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "04-0",
+      "route": "04-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "04-1",
+      "route": "04-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "05-0",
+      "route": "05-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "05-1",
+      "route": "05-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "06-0",
+      "route": "06-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "06-1",
+      "route": "06-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "07-0",
+      "route": "07-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "07-1",
+      "route": "07-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "08-0",
+      "route": "08-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "08-1",
+      "route": "08-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "09-0",
+      "route": "09-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "09-1",
+      "route": "09-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "10-0",
+      "route": "10-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "10-1",
+      "route": "10-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "11-0",
+      "route": "11-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "11-1",
+      "route": "11-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "12-0",
+      "route": "12-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "12-1",
+      "route": "12-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "13-0",
+      "route": "13-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "13-1",
+      "route": "13-1.txt",
+      "frames": 3700
+    },
+    {
+      "name": "14-0",
+      "route": "14-0.txt",
+      "frames": 3700
+    },
+    {
+      "name": "14-1",
+      "route": "14-1.txt",
+      "frames": 3700
+    }
+  ]
+}
