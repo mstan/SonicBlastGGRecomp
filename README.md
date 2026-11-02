@@ -19,7 +19,7 @@ redistributed here.
 
 ## Status
 
-**v0.0.3 — assisted coverage pre-release.** The assisted survey covers all 15 acts for both Sonic and Knuckles through the original round and character loaders. The 198-entry ROM-verified profile runs all 30 cases with zero fallback. Live-bank dispatch fixes the large native scene differences found during the survey. One single-frame ring-icon capture differs during a sprite upload; the reports preserve that limitation. These are assisted scene tests; full unassisted gameplay remains unverified. See [coverage details](smsggrecomp/COVERAGE.md) and [reproducible routes](tests/coverage/suite.json).
+**v0.0.4 — assisted coverage pre-release.** The assisted survey covers all 15 acts for both Sonic and Knuckles through the original round and character loaders. The ROM-verified profile runs all 30 cases with zero fallback. Live-bank dispatch fixes the large native scene differences found during the survey. One single-frame ring-icon capture differs during a sprite upload; the reports preserve that limitation. These are assisted scene tests; full unassisted gameplay remains unverified. See [coverage details](smsggrecomp/COVERAGE.md) and [reproducible routes](tests/coverage/suite.json).
 
 ## Screenshots
 
@@ -38,6 +38,11 @@ Recompiled native build (no emulator), captured running the .gg ROM:
    ```
    SonicBlastGGRecomp.exe path\to\sonicblast.gg --window 4
    ```
+
+For faithful 16x internal resolution, add `--internal-scale 16`, or drag your ROM onto
+`Play 16x.cmd` in the release ZIP. Tile artwork stays sharp with no smoothing or
+invented detail. `Play.cmd` uses the normal native-resolution display. Both run
+with normal audio. An unsupported GPU falls back to native output.
 
 ## Controls
 
