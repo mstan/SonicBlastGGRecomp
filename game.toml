@@ -4,6 +4,7 @@
 # Primary Game Gear bring-up target (exercises the GG VDP/palette/stereo path).
 
 [game]
+name = "Sonic Blast"
 output_prefix = "sonicblast"
 platform      = "gg"
 rom           = "sonicblast.gg"   # gitignored
