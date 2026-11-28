@@ -12,9 +12,8 @@ The game's Z80 machine code is translated **ahead of time** into C and compiled
 to a native binary — it is not interpreted at runtime. The rest of the Game Gear
 (VDP with the GG palette/viewport, SN76489 stereo sound, controller/system
 ports, the Sega mapper) is modeled by the
-[smsggrecomp](https://github.com/mstan/smsggrecomp) runtime. Computed jumps the
-static analysis can't resolve fall back to a bundled Z80 interpreter over the
-live bus. You supply your own legally-dumped copy of the ROM; it is **never**
+[smsggrecomp](https://github.com/mstan/smsggrecomp) runtime. Computed jumps require generated coverage; an unsupported
+native target stops with a coverage error. You supply your own legally-dumped copy of the ROM; it is **never**
 redistributed here.
 
 ## Status
@@ -83,7 +82,7 @@ directory still builds this project. `-Framework` selects an alternate engine
 checkout. `-SkipRegenerate` requires compatible generated sources already on
 disk. Generated C and ROMs are ignored and are not distributed.
 
-For a deterministic coverage run:
+For a deterministic host-native HLE coverage run (no interpreter is launched):
 
 ```text
 python smsggrecomp/tools/run_coverage_suite.py --runtime build/SonicBlastGGRecomp.exe --rom path/to/sonicblast.gg --suite tests/coverage/suite.json --out coverage-new
@@ -95,10 +94,10 @@ python smsggrecomp/tools/run_coverage_suite.py --runtime build/SonicBlastGGRecom
 powershell -File smsggrecomp/tools/package_game_release.ps1 -ProjectRoot .
 ```
 
-This stages the built exe, `SDL2.dll`, `Play.cmd`/`Play 16x.cmd`,
+This stages the built exe, its verified runtime DLL closure, launcher assets, `Play.cmd`/`Play 16x.cmd`,
 `README.txt` (from [`packaging/README.txt.in`](packaging/README.txt.in)) and
 every license notice under `licenses/`, then writes
-`release/SonicBlastGGRecomp-windows-x64.zip`. It fails if any notice is missing.
+`release/SonicBlastGGRecomp-windows-x64.zip`. It fails if required assets, runtime dependencies or notices are missing, and reopens the ZIP to verify its contents. Double-click `Play.cmd` to select your original image; dragging an image onto it also works.
 
 ## Repo layout
 
